@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Power Oil & Lubricants</h1>
+    <HomePageDetails />
+    <br>
+    <SliderShow/>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePageDetails from "./components/HomePage.vue";
+import SliderShow from "./components/SliderShow.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HomePageDetails,
+    SliderShow,
+    
+  },
+};
 </script>
 
 <style>
